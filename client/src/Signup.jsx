@@ -27,7 +27,7 @@ function Signup() {
       password: password,
     });
     axios
-      .post("", { name, email, password })
+      .post("http://localhost:3001/register", { name, email, password })
       .then((result) => console.log(result))
       .catch((error) => console.log(error));
   }
